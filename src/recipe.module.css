@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.recipe {
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.562);
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  background: #247ba07a;
+}
+
+.recipe h1 {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  width: 200px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.cardhead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 20px 80px;
+}
+
+.image {
+  border-radius: 50px;
+  width: 150px;
+  height: 150px;
+  margin: 25px 35px 0px 35px;
+}
+
+.ingredients {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.ingredients li {
+  margin-top: 2px;
+}
+
+@media (min-width: 565px) {
+}
+
+@media (min-width: 1400px) {
+  .image {
+    width: 250px;
+    height: 250px;
+  }
+  .cardhead {
+    margin: 20px 0 20px 200px;
+  }
+  .recipe h1 {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .cardhead {
+    margin: 20px 0 20px 300px;
+  }
+  .recipe h1 {
+    width: 400px;
+  }
+}
