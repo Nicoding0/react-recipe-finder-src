@@ -12,10 +12,19 @@ export default function Nav() {
     <header>
       <nav>
         <ul className="navbar">
-          <Link className="links" exact="true" style={navStyle} to="/">
+          <Link
+            className="links"
+            exact="true"
+            style={navStyle}
+            to="/react-recipe-finder/"
+          >
             <li>Home</li>
           </Link>
-          <Link className="links" style={navStyle} to="/about">
+          <Link
+            className="links"
+            style={navStyle}
+            to="/react-recipe-finder/about"
+          >
             <li>About</li>
           </Link>
         </ul>

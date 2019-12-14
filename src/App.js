@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-//import Search from "./components/Search";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import uuid from "uuid";
 import Recipes from "./components/Recipes";
-//import RecipeDetails from "./components/RecipeDetails";
 import Nav from "./components/Nav";
 import About from "./components/About";
 
@@ -64,11 +62,11 @@ const App = () => {
           </button>
         </form>
 
-        <Route path="/about" component={About} />
+        <Route path="/react-recipe-finder/about" component={About} />
 
         <Route
           exact
-          path="/"
+          path="/react-recipe-finder/"
           render={props => (
             <React.Fragment>
               {recipe.map(recipe => (
@@ -82,8 +80,6 @@ const App = () => {
             </React.Fragment>
           )}
         />
-
-        {/*<Route path="/ingredients/:label" exact component={RecipeDetails} />*/}
       </Router>
     </div>
   );
